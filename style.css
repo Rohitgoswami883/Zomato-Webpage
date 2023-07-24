@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
+ body {
   font-family: 'Merriweather', serif;
   background-color: #ebf2ff;
 }
@@ -107,6 +107,24 @@ body {
   font-size: 30px;
   font-weight: 800;
   color: #1D3557;
+}
+
+.view__button {
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+      #dd2476 51%,
+      #ff512f 100%
+    );
+    color: #fff;
+    border: none;
+    font-family: 'Merriweather', serif;
+    margin-top: 25px;
+    padding: 16px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 400;
+    width:100%;
 }
 
 .restaurant__container{
@@ -292,6 +310,11 @@ footer > ul > li {
     align-items: center;
   }
 
+  .view__button {
+    background: none;
+    /* filter: brightness(0) invert(1); */
+}
+
   .restaurant__container {
     display: flex;
     justify-content: space-between;
@@ -377,6 +400,20 @@ footer > ul > li {
 
   .explore__menu__text {
     font-size: 48px;
+  }
+
+  .view__button {
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+
+  .view__button:hover {
+    margin-left: 200px;
+    width: 50%;
+    color: #D71313;
+    background-color: white;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
   }
 
   .restaurant2,
